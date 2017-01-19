@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <meta charset="utf-8">
-    <title>Hello, World! - A-Frame</title>
-    <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <title>The plain stock garden</title>
+    <meta name="description" content="VR, code">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
   </head>
-  <body>
-<a-scene>
- <a-entity position="0 1 0" rotation="-90 0 0">
-   <a-camera></a-camera>
- </a-entity>
- <a-sky color="#111111">  </a-sky>
- <a-box position="0 -1 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"> <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="1000"></a-animation>
- <a-animation attribute="postion" from="0 -1 -1"
-              to="0 -3 -1"  begin="0" dur="2000" directioon="alternate" repeat="indefinite"></a-animation></a-box>
- 
-    <a-box position="3 -1 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"><a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="2000"></a-animation         </a-box>
- 
- 
-  <a-box position="0 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0">
-    <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="3000"></a-animation>
-    <a-animation attribute="postion" from="0 0 -1" to="0 0 -4" begin="0" dur="2000" direction="alternate" repeat="indefinite"></a-animation>
-  </a-box>
- 
-    <a-box position="-3 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"><a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="4000"></a-animation>  </a-box>
- 
- 
- <a-box position="-6 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"><a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="5000"></a-animation>  </a-box>
-      
-      
-      <a-box position="-6 0 0"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"><a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="6000"></a-animation>  </a-box>
- 
- 
- <a-box position="3 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"><a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="6000"></a-animation>  </a-box> 
- 
-      
-      <a-box position="3 0 0"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"><a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="7000"></a-animation>  </a-box> 
 
-      
-      
-      
-      
-      </a-scene>  </body>
+  <body>
+    <a-scene>
+      <a-entity position="0 1 0" rotation="-90 0 0">
+        <a-camera></a-camera>
+      </a-entity>
+      <a-sky color="#111111"></a-sky>
+ 
+      <!-- Cube #1 -->     
+      <a-box position="0 -1 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"> 
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="1000"></a-animation>
+        <a-animation attribute="position" from="0 -1 -1" to="0 -3 -1"  begin="0" dur="2000" direction="alternate" repeat="indefinite"></a-animation>
+      </a-box>
+
+      <!-- Cube #2 -->
+      <a-box position="3 -1 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0">
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="2000"></a-animation>
+        <a-animation attribute="position" from="3 -1 -1" to="3 -1 1" begin="0" dur="2000" direction="alternate" repeat="indefinite"></a-animation>
+      </a-box>
+  
+      <!-- Cube #3 -->
+      <a-box position="0 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0"> 
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="3000"></a-animation>
+        <a-animation attribute="position" from="0 0 -1" to="0 0 -4"  begin="0" dur="2000" direction="alternate" repeat="indefinite"></a-animation>
+      </a-box>
+  
+      <!-- Cube #4 -->
+      <a-box position="-3 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0">
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="4000"></a-animation>
+        <a-animation attribute="position" from="-3 0 -1" to="-3 0 -3" direction="alternate" repeat="indefinite"></a-animation>
+      </a-box>
+ 
+      <!-- Cube #5 --> 
+      <a-box position="-5 0 -2" color="#FFFFFF"  height=".5" depth="1" width="1" rotation="0">
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="7000"></a-animation>
+        <a-animation attribute="position" from="-5 0 -2" to="-1 0 -2" direction="alternate" repeat="indefinite"></a-animation>
+      </a-box> 
+
+      <!-- Cube #6 -->
+      <a-box position="-6 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0">
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="5000"></a-animation>
+        <a-animation attribute="position" from="-6 0 -1" to="-4 0 -3" direction="alternate" repeat="indefinite"></a-animation>
+      </a-box>
+
+      <!-- Cube #7 -->
+      <a-box position="3 0 -1"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0">
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="6000"></a-animation>
+        <a-animation attribute="position" from="3 0 1" to="5 0 -2" direction="alternate" repeat="indefinite"></a-animation>
+      </a-box> 
+ 
+      <!-- Cube #8 -->
+       <a-box position="3 0 0"  color="#FFFFFF" height=".5" depth="1" width="1" rotation="0">
+        <a-animation attribute="color" from="#FFFFFF" to="#32cd32" begin="8000"></a-animation>
+        <a-animation attribute="position" from="3 0 0" to="5 0 -3"  direction="alternate" repeat="indefinite"></a-animation>
+      </a-box> 
+    </a-scene>
+  </body>
 </html>
